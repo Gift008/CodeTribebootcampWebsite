@@ -1,0 +1,61 @@
+body {
+    background-color: antiquewhite;
+
+}
+
+nav{
+    background-color: azure;
+}
+
+.image{
+    float: right;
+    width: 200px;
+    height: 250px;
+    border: 5px solid rgb(54, 138, 124);
+    box-shadow: 5px;
+    border-radius: 20%;
+
+}
+.logo{
+    width: 200px;
+    height: 80px;
+    float: left;
+    margin-left: 5px;
+}
+.nav{
+   float:right;
+   background-color: #111011;
+   color: rgb(54, 138, 124);
+   padding: 8px;
+   font-size: 15px;
+   width: 100px;
+   margin-right: 15px;
+   border: none;
+   cursor: pointer 
+}
+.footer{
+    background-color: cadetblue;
+    text-align-last: left;
+}
+
+.fot{
+    background-color: black;
+    color: rgb(54, 138, 124);
+    padding: 8px;
+    font-size: 15px;
+    width: 100px;
+    margin-right: 20px;
+    border: none;
+}
+.h2{
+    color: rgb(54, 138, 124);
+}
+.h2A{
+    text-align-last: center;
+    color: rgb(54, 138, 124);
+
+}
+.h2B{
+    text-align-last: center;
+
+}
