@@ -14,8 +14,16 @@ nav{
     border: 5px solid rgb(54, 138, 124);
     box-shadow: 5px;
     border-radius: 20%;
-
 }
+
+.map{
+    float: right;
+    width: 400px;
+    height: 500px;
+    border: 5px solid rgb(54, 138, 124);
+    box-shadow: 5px;
+}
+
 .logo{
     width: 200px;
     height: 80px;
@@ -59,3 +67,35 @@ nav{
     text-align-last: center;
 
 }
+
+.btn {
+    padding: 15px 32px;
+    transition-duration: 0.4s;
+  }
+  
+  .btn:hover {
+    background-color:  rgb(54, 138, 124);
+    color: white;
+  }
+
+  input[type=text], select, textarea {
+    width: 40%; 
+    padding: 12px; 
+    border: 2px solid  rgb(54, 138, 124); 
+    border-radius: 4px; 
+    box-sizing: content-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+
+  input[type=email], select, textarea {
+    width: 40%; 
+    padding: 12px; 
+    border: 2px solid  rgb(54, 138, 124); 
+    border-radius: 4px; 
+    box-sizing: content-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical 
+  }

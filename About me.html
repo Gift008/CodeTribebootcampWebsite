@@ -12,61 +12,111 @@
         <div class="container">
     
             <img class="logo" src="logo.png" alt="Logo" id="logo">
-            <a class="nav" href="index.html">Home</a>
             <a class="nav" href="#">About me</a>
             <a class="nav" href="Contact us.html">Contact us</a>
+            <a class="nav" href="index.html">Home</a>
     
         </div>
 </header>
 <br><br><br><br>
 <main>
-    <h1 class="h2">About Maake Gift</h1>
-    <p>I am a graduate from the university of limpopo holding a degree in Mathematical sciences <br>
-        where I majored in computer sciences and Applied Mathematics. I am a dedicated and  <br>
-        hard working individual as I put more effort in what I do.
-    </p>
-    <p>I am mostly interested in the field of Computer Sciences as is has proven to be the most <br>
-    successful given the rise of technology and its implimentations in terms of coding, AI, etc. </p>
 
-    <p>I moved to Soweto in Gauteng few months after graduating to seek better opportunities and <br>
-    to grow my skills and better myself </p>
-    
-    <br>
-    <h1 class="h2A">Educational Background</h1>
-    <p class="h2B">I attended my high school in Tzaneen a town in Limpopo where I was born in and completed in 2015<br>
-    and was offered an opportunity to study for an IT qualificatin at UJ and a Computer Sciences one at UL. <br>
-    I Took the in Limpopo to remain close to home.The degree was a bit challenging as I had my issues with maths <br>
-     and it lead to my degree being completed in 5 years.</p>
+      <p id="name"></p>
+      <p id="namedetailed"></p>
+      <p id="education"></p>
+      <p id="educationdetailed"></p>
+      <p id="projects"></p>
+      <p id="projectsdetailed"></p>
+      <p id="work"></p>
+      <p id="workdetailed"></p>
+      <p id="profile"></p>
+     
+      </h1>
+      <script>
+      
+      let userInfo = {
+          //Personal information
+          username: "Gift",
+          surname: "Maake",
+          email: "maakegift008@gmail.com",
+          Phonenumber: "0737460380",
+          location: "Gauteng,Johannesburg",
+      
+          //Educationa Background
+          highschool: "Napscom Secondary",
+          university: "University of Limpopo",
+          qualification: "BSc Mathematical Sciences (Major Computer Sciences & Applied Mathematics)",
+          qualificatintype: "Degree (NQF Level 7)",
+      
+          //Working Experience
+          companyname: "Waraco PTY LTD",
+          companylocation: "Sandton, Sandawn",
+          startdate: 13/09/2021,
+          enddate: 05/01/2022,
+          terminationreason: "Retrentched due to Financial Reasons",
+          
+      
+      
+      }
 
-     <p class="h2B">The above mentioned is my formal education and I have some few other certificates that I earned through my<br>
-    own efforts through online platforms</p>
+      const projectitems = [
+          {items: "Charity Finder", grade: 63},
+          {items: "Deadlock Simulation", grade: 90}, 
+          {items: "Waraco GPRC Solution", grade: "Not Applicable"}
+          ]
+          console.log(projectitems);
+          console.log(userInfo);
+      
+              document.getElementById("name").innerHTML = "<h1 style='color: rgb(54, 138, 124);'>"+ "About " +userInfo.surname+" " +userInfo.username+ "</h1>";
+              document.getElementById("namedetailed").innerHTML = "<p>"+"I am a graduate from the " + userInfo.university+"holding a degree in"+userInfo.qualification+"<br>"+
+                "I am a dedicated individual as I put more effort in what I do "+"<br>"+"<br>"
+                +"I am mostly interested in the field of Computer Sciences as is has proven to be the most successful given the rise of technology and its implimentations"+ "<br>"+
+                    "in terms of coding, AI, etc."+"I moved to Soweto in Gauteng few months after graduating to seek better opportunities and to grow my skills and better myself" +"</p>";
 
-    <br>
-    <h1 class="h2">Projects I have Worked on</h1>
-    <p>I was first introduced to programming on my first year and since then we only wrote small progrmas to see if we grasp the concepts<br>
-    We did not don any big projects until our final year and we did the project in groups of 5</p>
-    <p>The first project I worked on with my group was creating a platform that allows people to list their<br>
-    organisation mostly NGOs on it and accepting donations through it like a gofundme scheme. The plaform worked<br>
-    but it had issues especially in temrms of security and others so we ended up with a final mark of 63% </p>
+              document.getElementById("education").innerHTML = "<h1 style='color: rgb(54, 138, 124); text-align-last: center;'> "+"Educational Background" + "</h1>";
 
-    <p>The second one was to simulate a deadlock between vehicles so we were not restricted to programming<br>
-    so we took advantage of this and used blender and the project was a success as we ended up scoring above 90%</p>
+              document.getElementById("educationdetailed").innerHTML = "<p style='text-align-last: center;'>"
+                +"I attended "+userInfo.highschool+" in Tzaneen a town in Limpopo where I was born in and completed in January of 2016"+"<br>"+
+                 "and thereafter was offered an opportunity to study for an IT qualificatin at UJ and a Computer Sciences one at " +"<br>"+userInfo.university+
+                "I Took the in Limpopo to remain close to home.The degree was a bit challenging as I had my issues with maths"+"<br>"+
+                "and it lead to my degree being completed in 5 years."+"<br>"+"<br>"+
 
-    <p>The most recent Project I worked on was last year which started in November. We were tasked with implimenting<br>
-    the strategy of the company using the a corporater system (Which was our first project after completing our trainig).<br>
-     Although we did start with the project we were unable to finishsince almost every one in the company was retrenched <br>
-      to due the company having financial issue </p>
+                "The above mentioned is my formal education and I have some few other certificates that I earned through my"+"<br>"+
+                "own efforts through online platforms" + "</p>";
 
-      <h1 class="h2A">Educational Background</h1>
-      <p class="h2B">I worked for a company named Waraco in Sandton as an intern for 4 months where we recieved trainig for<br>
-      developing GRC (Governance, Risk and compliance) systems of companies by means of configuring instead of coding.<br>
-      This was a nice concept but unforunately we were retrenched early this year in January due to the company having financial issues</p>
+              document.getElementById("projects").innerHTML = "<h1 style='color: rgb(54, 138, 124);'> "+"Projects I have worked on" + "</h1>";
+
+              document.getElementById("projectsdetailed").innerHTML = "<p>"
+                +"I was first introduced to programming on my first year and since then we only wrote small progrmas to see if we grasp the concepts"+"<br>"+
+                "We did not don any big projects until our final year and we did the project in groups of 5"+"<br>"+"<br>"+
+
+                "The first project I worked on with my group was creating a platform that allows people to list their"+"<br>"+
+                "organisation mostly NGOs on it and accepting donations through it like a gofundme scheme. The plaform worked"+"<br>"+
+                "but it had issues especially in temrms of security and others so we ended up with a final mark of 63%"+"<br>"+"<br>"+
+
+                "The second one was to simulate a deadlock between vehicles so we were not restricted to programming"+"<br>"+
+                "so we took advantage of this and used blender and the project was a success as we ended up scoring above 90%"+"<br>"+"<br>"+
+
+                "The most recent Project I worked on was last year which started in November. We were tasked with implimenting"+"<br>"+
+                "the strategy of the company using the a corporater system (Which was our first project after completing our trainig)."+"<br>"+
+                "Although we did start with the project we were unable to finishsince almost every one in the company was retrenched"+"<br>"+"<br>"+
+                 "due the company having financial issue" + "</p>";
+
+              document.getElementById("work").innerHTML = "<h1 style='color: rgb(54, 138, 124); text-align-last: center;'> "+"Work Experience" + "</h1>";
+
+              document.getElementById("workdetailed").innerHTML = "<p style='text-align-last: center;'>"
+                +"I worked for a company named Waraco in Sandton as an intern for 4 months where we recieved trainig for"+"<br>"+"<br>"+
+                "developing GRC (Governance, Risk and compliance) systems of companies by means of configuring instead of coding."+"<br>"+
+                "This was a nice concept but unforunately we were retrenched early this year in January due to the company having financial issues" + "</p>";
 
 
+      </script>
+
+<br>
 </main>
 
 <footer class="footer">
-    <h3>Footer</h3>   
+    <br>
       <a class="fot" href="http://linkedin.com/in/gift-maake-424682201" target="_blank" rel="noopener noreferrer">linkedin</a>
       <a class="fot" href="tel:+27 73 746 0380">Contact Numbers</a>
       <a class="fot" href="http://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
